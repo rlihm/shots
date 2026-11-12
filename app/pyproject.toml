@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shots"
+version = "2.0.0"
+description = "Standardised website screenshots for references and before/after comparisons"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright>=1.40",
+  "pyyaml>=6",
+  "pillow>=10",
+  "questionary>=2",
+]
+
+[project.scripts]
+shots = "shots.cli:main"
+
+[tool.setuptools]
+packages = ["shots"]
+
+[tool.setuptools.package-data]
+shots = ["prepare.js"]

@@ -1,0 +1,6 @@
+/projects/
+/captures/
+/config.yml
+__pycache__/
+*.egg-info/
+.DS_Store
